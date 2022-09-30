@@ -35,7 +35,7 @@ Button(root,text="-",command= lambda :get_operation("-")).grid(row=3,column=3, s
 Button(root,text="*",command= lambda :get_operation("*")).grid(row=4,column=3, sticky=N+S+E+W)
 Button(root,text="/",command= lambda :get_operation("/")).grid(row=5,column=3, sticky=N+S+E+W)
  
-# adding new operations
+
 Button(root,text="pi",command= lambda :get_operation("*3.14")).grid(row=2,column=4, sticky=N+S+E+W)
 Button(root,text="%",command= lambda :get_operation("%")).grid(row=3,column=4, sticky=N+S+E+W)
 Button(root,text="(",command= lambda :get_operation("(")).grid(row=4,column=4, sticky=N+S+E+W)
@@ -47,9 +47,8 @@ Button(root,text=")",command= lambda :get_operation(")")).grid(row=4,column=5, s
 Button(root,text="^2",command= lambda :get_operation("**2")).grid(row=5,column=5, sticky=N+S+E+W)
 Button(root,text="^2",command= lambda :get_operation("**2")).grid(row=5,column=5, sticky=N+S+E+W)
 Button(root,text="=",command= lambda :calculate()).grid(columnspan=6, sticky=N+S+E+W)
- # keeps the track of current position on the input text field
+ 
 i = 0
-# Receives the digit as parameter and display it on the input field
 def get_variables(num):
     global i
     display.insert(i,num)
